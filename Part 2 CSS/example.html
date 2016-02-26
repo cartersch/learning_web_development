@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Example Page</title>
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="example.css"><!--Note 1-->
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">This is an example page</h1><!--Note 2-->
+
+        <p>
+            This is paragraph. And this paragraph has a link that will
+            send you to the <a href="https://google.com">Google home page</a>.
+        </p>
+
+
+        <div class="section">
+            <p class="green">
+                This paragraph is located inside a div tag with a class called 'section.'
+                The paragraph itself has a class of 'green.'  In the stylesheet there is
+                a rule reads '.section .green' that will apply specifically to this paragraph only.
+            </p>
+        </div>
+
+        <p class="green">
+            This paragraph also has a class of green, but it does not have the same styling as the paragraph above.
+            Why? In the stylesheet we declared '.section .green' instead of say '.green' or even '.section, .green.'
+            Therefore there is no style for anything that just has a class of '.green.'
+        </p>
+
+
+        <p class="section green"><!--Note 3-->
+            This paragraph has two classes ('section' and 'green'). Even though there is a rule in our stylesheet that
+            reads '.section .green', this is not the style sheet that is applied.  Instead, the one that is applied is
+            the rule that read '.section.green' This is because '.section .green' is interpreted as any 'green' class
+            that is inside an element with a 'section' class.  While '.section.green' is interpreted as any element that
+            has both a 'section' class AND a 'green' class.
+        </p>
+
+    </div>
+
+<!--
+NOTES
+
+Note 1 - To connect a CSS file to your HTML file use a 'link' tag inside the 'head' tag.
+         The 'href' attribute holds the path to the CSS file.  This can be a relative path
+         (like the one above) or a link to a external resource.
+
+Note 2 - id's should always be unique for each page. Since I've used the id of 'title' on this page, 'title' should
+         not be used on this page again.
+
+Note 3 - you can have multiple classes on an element. In the 'class' attribute, just separate each class name with a
+         space.
+
+-->
+
+</body>
+</html>
+

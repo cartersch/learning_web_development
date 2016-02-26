@@ -1,0 +1,65 @@
+body{
+    background-color: #fffff0;
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif; /* Note 1 */
+}
+
+.container{ /* Note 2 */
+    width: 75%;
+    margin: 0 auto;
+}
+
+#title{ /* Note 3 */
+    margin-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #0000cd;
+}
+
+a:hover,
+a:focus{ /* Notes 4,5,6 */
+    text-decoration: underline;
+    color: #00008b;
+}
+
+
+.section .green{ /* Note 7 */
+    padding: 20px;
+    background-color: #90ee90;
+}
+
+.section.green{ /* Note 8 */
+    padding: 40px;
+    background-color: #2e8b57;
+    color: #ffffff;
+}
+
+
+/*
+NOTES
+
+Notes 1 - When creating a font-family, remember to always have either 'sans-serif' or 'serif' as the last
+          item in the list.  This will ensure that at the very least the default system fonts for the device
+          will used.
+
+Note 2  - In a CSS file, the period (.) is used to signify the class's styling.
+
+Note 3  - In a CSS file, the hash (#) is used to signify an id's styling.
+
+Note 4  - If you need to apply the same style to multiple elements (or multiple pseudo-classes) you can declare multiple
+          elements with a comma separated between them.  For legibility purposes, I keep each element on a separate line.
+
+Note 5  - Pseudo-classes are signified with a colon(:) after the element.
+
+Note 6  - When setting a style for a ':hover' pseudo-class, remember to also include the ':focus' pseudo-class as well.
+          This will ensure if someone is using a keyboard to navigate you're website, the styles will also get applied.
+          Also remember there is no such thing as a hover state on a mobile device.
+
+Note 7  - This rule will only be applied to an element that has a class of 'green' that is also inside an element that
+          has a class of 'section'
+
+Note 8  - This rule will only be applied to an element that has both a class of 'section' AND 'green'
+
+*/
