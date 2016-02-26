@@ -3,14 +3,15 @@
     <head>
     	<title>Example Page</title><!--Note 3-->
 	    <meta charset="utf-8"><!--Note 4-->
-	    <meta name="viewport" content="width=device-width, initial-scale=1"><!--Note 5-->
+        <meta name="X-UA-Compatible" content="IE=edge"><!--Note 5-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1"><!--Note 6-->
     </head>
     <body>
-	    <h1>This is an example page</h1><!--Note 6-->
+	    <h1>This is an example page</h1><!--Note 7-->
 
 	    <p>This is a simple paragraph.  It's just here for filler, there is really nothing to see here. Move along.</p>
 
-        <!--Note 7-->
+        <!--Note 8-->
 	    <script>
 		    console.log('logging to the console.');
 	    </script>
@@ -32,14 +33,16 @@ Note 3 - Inside the head tag, the 'title' tag is the only required element.
 
 Note 4 - Make sure that you set character encoding to ensure your content is interpreted correctly.
 
-Note 5 - The 'viewport' meta tag is starting to become a de-facto standard for many web pages/applications.
+Note 5 - This meta tag ensures Internet Explorer is forced to use the highest possible mode available.
+
+Note 6 - The 'viewport' meta tag is starting to become a de-facto standard for many web pages/applications.
 	     This sets window size of the web page/application which can then be used change styling and layout
 	     on various devices.
 
-Note 6 - Heading tags (h1,h2,etc.) help to build a document hierarchy. Headings can also be used by various
+Note 7 - Heading tags (h1,h2,etc.) help to build a document hierarchy. Headings can also be used by various
 	     accessibility tools to navigate web pages/applications.
 
-Note 7 - Whenever possible, keep any JavaScript at the bottom of the page.  This will ensure that
+Note 8 - Whenever possible, keep any JavaScript at the bottom of the page.  This will ensure that
 	     the HTML and CSS are rendered first before and JavaScript is executed.  If you were to place 'script' tags
 	     inside the 'head' tag, the JavaScript would execute before the HTML is rendered.
 
