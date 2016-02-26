@@ -1,0 +1,209 @@
+.example{
+    height: 250px;
+    margin: 10px;
+    border: 1px solid #0378A6;
+}
+
+/* transition background */
+.transition-bg{
+    position: relative;
+    background-color: #BF4F45;
+
+    -webkit-transition: background-color 0.7s ease-in; /* Note 1*/
+    -moz-transition: background-color 0.7s ease-in;
+    -ms-transition: background-color 0.7s ease-in;
+    -o-transition: background-color 0.7s ease-in;
+    transition: background-color 0.7s ease-in;
+}
+
+.transition-bg-text{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.change{
+    background-color: #0378A6;
+}
+
+/* transition position */
+.transition-pos{
+    position: relative;
+    overflow: hidden;
+}
+
+.transition-object{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: #BF4F45;
+    color: #FFFFFF;
+    height: 250px;
+    right: -133px;
+
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+
+    
+}
+
+.reveal{
+    right: 0px;
+}
+
+
+/* linear gradient */
+.linear-gradient{
+    
+    
+    /* Fallback for browsers with no gradient support */
+    background-color: #BF4F45;
+    
+    /* Safari 4, Chrome 1-9, iOS 3.2-4.3, Android 2.1-3.0 */
+      background-image:
+        -webkit-gradient(linear, left top, right top, from(#BF4F45), to(#0378A6));
+  
+      /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
+      background-image:
+        -webkit-linear-gradient(left, #BF4F45, #0378A6);
+
+      /* Firefox 3.6 - 15 */
+      background-image:
+        -moz-linear-gradient(left, #BF4F45, #0378A6);
+
+      /* Opera 11.1 - 12 */
+      background-image:
+        -o-linear-gradient(left, #BF4F45, #0378A6);
+
+      /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+      background-image:
+        linear-gradient(to right, #BF4F45, #0378A6);
+    
+}
+
+
+
+/* text shadow */
+.text-shadow{
+    font-size: 1.5em;
+    text-shadow: 3px 3px 1px #999999;
+}
+
+.multi-text-shadow{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #BF4F45;
+    text-shadow: 2px 2px 0px #0378A6, 
+                 4px 4px 0px #BF4F45,
+                 6px 6px 0px #0378A6,
+                 8px 8px 0px #BF4F45,
+                 10px 10px 0px #0378A6;
+}
+
+/* animation */
+.animation{
+    position: relative;
+}
+
+.moving{
+    position: absolute;
+    color: #FFFFFF;
+    padding: 10px;
+    background-color: #BF4F45;
+
+    -webkit-animation-name: slider;
+    -moz-animation-name: slider;
+    -o-animation-name: slider;
+    animation-name: slider;
+
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;: 5s;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+}
+
+
+@-webkit-keyframes slider{
+    from, to {
+        left: 0px;
+        background-color: #BF4F45;
+    }
+    
+    
+    50% {
+        left: 50%;
+        background-color: #0378A6;
+    }
+    
+    
+}
+
+@keyframes slider{
+    from, to {
+        left: 0px;
+        background-color: #BF4F45;
+    }
+    
+    
+    50% {
+        left: 50%;
+        background-color: #0378A6;
+    }
+}
+
+
+
+/* transform */
+.book{
+    width: 150px;
+    height: 175px;
+    margin: 20px;
+    padding: 35px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+}
+
+.cover{
+    box-shadow: 5px 5px 3px #666666;
+    z-index: 1;
+    transition: all 0.7s ease-out;
+    background-color: #BF4F45;
+    
+}
+
+.content{
+    box-shadow: 5px 5px 3px #666666;
+    z-index: 0;
+    background-color: #0378A6;
+}
+
+.open{
+    transform: translateX(-150px) rotate3d(0,1,0, -180deg) translateX(-5px);
+    box-shadow: -5px 5px 3px #666666;
+}
+
+
+/*
+NOTES
+
+Note 1  - With many CSS3 rules, browsers would sometimes have interpretations of these rules before they were finalized.
+          If you wanted to use these rules before they had been finalized you would need to 'vendor prefix' the rule with
+          something like '-webkit-' for Webkit based browsers.
+
+
+*/

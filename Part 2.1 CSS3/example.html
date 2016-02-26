@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS3 Stuff</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" media="screen"><!--Note 1-->
+    <link rel="stylesheet" href="example.css" type="text/css" media="screen">
+</head>
+<body>
+    
+    <header class="text-center">
+        <h1>CSS 3</h1>
+    </header>
+    
+    <section class="container">
+        <h2>Transitions</h2>
+        <div class="col-sm-6">
+            <div class="example transition-bg">
+                <div class="transition-bg-text">Click to change background</div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="example transition-pos">
+                <div class="transition-object">Click &nbsp;&nbsp;to reveal or hide.</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <h2>Gradients</h2>
+        <div class="col-sm-12">
+            <div class="example linear-gradient"></div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <h2>Text Shadows</h2>
+        <div class="col-sm-6">
+            <div class="example text-shadow text-center">
+                This has only one text shadow.
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="example multi-text-shadow text-center">
+                This has many text shadows.
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <h2>Animations</h2>
+        <div class="col-sm-12">
+            <div class="example animation">
+                <div class="moving">Let's Slide</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <h2>Transforms (and Transitions)</h2>
+        <div class="col-sm-12">
+            <div class="example transform">
+                <div class="book cover">
+                    <h4>Click to Open Cover</h4>
+                </div>
+                <div class="book content">
+                    <p>Here is some content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="example.js" type="text/javascript" charset="utf-8"></script>
+
+<!--
+NOTES
+
+Note 1 - This is connecting to an external stylesheet call Bootstrap. We will cover more about this stylesheet/framework
+         in the next section.
+
+-->
+
+</body>
+</html>
